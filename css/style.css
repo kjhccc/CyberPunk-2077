@@ -117,6 +117,69 @@ html {
 
 /* SECTION ABOUT----------------- */
 
-.about__text {
+.about {
   padding-top: 70px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-bottom: 70px;
+}
+
+.about__text {
+  min-width: 296px;
+  margin-bottom: 70px;
+}
+
+.about__text h2 {
+  font-family: Archangelsk;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 20px;
+}
+
+.about__text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* SCREENSHOTS */
+
+.screenshot {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(15% 0, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 25%);
+}
+
+.screenshot-big {
+  clip-path: polygon(15% 0, 100% 0, 100% 90%, 85% 100%, 0 100%, 0 10%);
+}
+
+/* SECTION FORM */
+
+.section__form {
+  color: #fff;
+  background-color: #000;
+}
+
+.svg__sale {
+  position: relative;
+}
+
+.svg__sale span {
+  color: #F8F200;
+  font-size: 10px;
+  font-family: Archangelsk;
+  text-transform: uppercase;
+  position: absolute;
+  top: 24px;
+  left: 15px;
+  transform: rotate(-45deg);
+}
+
+.svg__sale img {
+  width: 62px;
+  height: 62px;
 }
