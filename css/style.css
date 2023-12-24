@@ -1,0 +1,122 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family: Archangelsk;
+  font-weight: 400;
+  src: url(../fonts/Archangelsk.woff);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  z-index: 1;
+}
+
+.header__hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  padding: 20px 12px;
+  min-height: 713px;
+}
+
+/* SWIPER */
+
+.swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slide1 {
+  background-image: url(../img/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.slide2 {
+  background-image: url(../img/hero-mobile2.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.slide3 {
+  background-image: url(../img/hero-mobile3.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* SWIPER END */
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+}
+
+.logo img {
+  width: 200px;
+  height: 50px;
+}
+
+.social_networks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form__button {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 320px;
+  height: 207px;
+  font-family: Archangelsk;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #F8F200;
+  clip-path: polygon(15% 0, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 25%);
+  z-index: 1;
+}
+
+.form__button h2 {
+  display: inline-block;
+  text-align: center;
+  width: 295px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+.form__button button {
+  padding: 19px 50px;
+  background-color: #000;
+  color: #F8F200;
+  border: none;
+}
+
+/* SECTION ABOUT----------------- */
+
+.about__text {
+  padding-top: 70px;
+}
