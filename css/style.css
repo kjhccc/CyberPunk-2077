@@ -123,10 +123,10 @@ html {
 /* SECTION ABOUT----------------- */
 
 .about {
-  padding-top: 70px;
+  padding-top: 25%;
   padding-right: 12px;
   padding-left: 12px;
-  margin-bottom: 70px;
+  margin-bottom: 25%;
 }
 
 .about__text {
@@ -167,10 +167,15 @@ html {
 .section__form {
   color: #fff;
   background-color: #000;
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-bottom: 60px;
+  padding: 25% 12px 0px;
+  background-image: url(../img/decoration.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
+
+
 
 .svg__sale {
   position: relative;
@@ -220,27 +225,45 @@ html {
 }
 
 .button {
+  display: block;
   align-self: flex-start;
   padding: 15px 50px;
-  background: #F8F200;
+  background-color: #F8F200;
   margin-bottom: 14px;
+  border: none;
+
+}
+
+.button:active {
+  transform: translateY(1px);
 }
 
 #text {
   margin-bottom: 10px;
 }
 
-#name {
-  margin-bottom: 36px;
-}
+
 
 #text,
 #name {
-  background: transparent;
+  background-color: transparent;
   border-top: none;
   border-right: none;
   border-left: none;
-  padding-bottom: 10px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 36px;
+  color: #fff;
+}
+
+
+.input-text::placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.input-email::placeholder {
+  color: #fff;
+  font-weight: 300;
 }
 
 #file {
@@ -255,7 +278,7 @@ html {
   justify-content: center;
   width: 296px;
   height: 120px;
-  border: 1px solid #fff;
+  border: 1px dashed #777;
   text-decoration-line: underline;
   margin-bottom: 36px;
   font-weight: 300;
@@ -296,4 +319,90 @@ html {
 
 #checkbox:checked+span::before {
   opacity: 1;
+}
+
+/* ========MONITOR */
+.prize-monitor {
+  padding: 25% 12px 25%;
+  background-image: url(../img/decoration-down.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+  background-color: #F8F200;
+}
+
+.prize-monitor__monitor {
+  margin-bottom: 20px;
+}
+
+.flex-icon-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-hp {
+  width: 44px;
+  height: 44px;
+}
+
+.logo-razdelenie {
+  width: 49px;
+  height: 10px;
+}
+
+.logo-logo {
+  width: 175px;
+  height: 44px;
+}
+
+.prize-monitor__text h5 {
+  font-family: Archangelsk;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.prize-monitor__text p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 27px;
+}
+
+.opisanie-icons>div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+
+
+.opisanie-icons>div>span {
+  margin-right: 18px;
+}
+
+.opisanie-icons__button {
+  padding: 15px 50px;
+  margin-top: 22px;
+  background-color: #000;
+  color: #F8F200;
+  border: none;
+}
+
+.opisanie-icons__button:active {
+  transform: translateY(1px);
+}
+
+/* ===========SECTION BYE GAME */
+
+
+.buy-game {
+  padding: inherit;
+}
+
+.wraper-game {
+  width: 100%;
+  min-height: 200px;
 }
