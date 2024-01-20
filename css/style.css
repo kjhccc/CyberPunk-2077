@@ -152,14 +152,44 @@ html {
 
 /* SCREENSHOTS */
 
-.screenshot {
+.screenshots {
+  /* padding-left: 12px;
+  padding-right: 12px; */
+  min-width: 100%;
+}
+
+.screenshot1 {
+  display: block;
   width: 100%;
-  height: 100%;
+  min-height: 198px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(15% 0, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 25%);
+  margin-bottom: 12px;
+}
+
+.screenshot2 {
+  display: block;
+  width: 100%;
+  min-height: 198px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(15% 0, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 25%);
+  margin-bottom: 12px;
+
 }
 
 .screenshot-big {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(15% 0, 100% 0, 100% 90%, 85% 100%, 0 100%, 0 10%);
+
 }
 
 /* SECTION FORM */
@@ -336,6 +366,17 @@ html {
   margin-bottom: 20px;
 }
 
+
+.img-monitor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-monitor img {
+  flex-basis: 70%;
+}
+
 .flex-icon-img {
   display: flex;
   align-items: center;
@@ -397,12 +438,109 @@ html {
 
 /* ===========SECTION BYE GAME */
 
+.section__buy-game {
+  display: flex;
+  flex-direction: column;
+}
 
 .buy-game {
-  padding: inherit;
+  padding: 25% 12px 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.buy-game>h5 {
+  font-family: Archangelsk;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.buy-game>strong {
+  display: inline-block;
+  margin-bottom: 22px;
 }
 
 .wraper-game {
+  background-image: url(../img/buy-game.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 200px;
+  min-height: 198px;
+}
+
+.buy-game__icons {
+  display: flex;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+
+
+.buy-game>div>span {
+  margin-right: 18px;
+}
+
+.game-platforms {
+  width: 300px;
+}
+
+.game-platforms__svg {
+  display: inline-block;
+}
+
+.game-platforms__svg:not(:nth-child(2n)) {
+  margin-right: 56px;
+  margin-bottom: 48px;
+}
+
+/* SECtion copyright */
+
+.copyright {
+  padding: 25% 12px 40px;
+
+}
+
+.copiright__logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 180px;
+  gap: 25px;
+}
+
+.foote-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  MIN-height: 103PX;
+  background-color: #E5E5E5;
+
+}
+
+.foote-text>a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #000;
+  color: #E5E5E5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media(min-width: 500px) {
+  .wraper-game {
+    background-size: contain;
+    background-repeat: repeat;
+  }
 }
