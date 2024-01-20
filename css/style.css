@@ -545,17 +545,18 @@ footer {
 @media(min-width: 500px) {
   .slide1 {
     background-image: url(../img/hero-desk.jpg);
+    height: 100%;
   }
 
   .slide2 {
     background-image: url(../img/hero-desk2.jpg);
-
+    height: 100%;
 
   }
 
   .slide3 {
     background-image: url(../img/hero-desk3.jpg);
-
+    height: 100%;
 
   }
 
@@ -579,5 +580,29 @@ footer {
 
   .screenshot2 {
     min-width: 48%;
+  }
+}
+
+@media(min-width: 1024px) {
+  .header__hero {
+    min-height: 1000px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .social_networks {
+    gap: 45px;
+  }
+
+  .about {
+    padding-top: 15%;
+    margin-bottom: 15%;
   }
 }
