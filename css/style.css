@@ -90,7 +90,6 @@ html {
   align-items: center;
   justify-content: space-evenly;
   bottom: 0;
-  left: 0;
   right: 0;
   max-width: 320px;
   height: 207px;
@@ -161,7 +160,7 @@ html {
 .screenshot1 {
   display: block;
   width: 100%;
-  min-height: 198px;
+  min-height: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,7 +171,7 @@ html {
 .screenshot2 {
   display: block;
   width: 100%;
-  min-height: 198px;
+  min-height: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,7 +183,7 @@ html {
 .screenshot-big {
   display: block;
   width: 100%;
-  min-height: 420px;
+  min-height: 460px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -230,7 +229,11 @@ html {
 
 .prizes {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.prize {
+  flex-basis: 36%;
 }
 
 .section__form h3 {
@@ -245,7 +248,6 @@ html {
   font-size: 16px;
   line-height: 2em;
   min-width: 296px;
-  min-height: 213px;
   margin-bottom: 70px;
 }
 
@@ -483,17 +485,19 @@ html {
 }
 
 .game-platforms {
-  width: 300px;
+  /* width: 300px; */
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr;
 }
 
 .game-platforms__svg {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
-.game-platforms__svg:not(:nth-child(2n)) {
+/* .game-platforms__svg:not(:nth-child(2n)) {
   margin-right: 56px;
   margin-bottom: 48px;
-}
+} */
 
 /* SECtion copyright */
 
@@ -539,8 +543,41 @@ footer {
 }
 
 @media(min-width: 500px) {
+  .slide1 {
+    background-image: url(../img/hero-desk.jpg);
+  }
+
+  .slide2 {
+    background-image: url(../img/hero-desk2.jpg);
+
+
+  }
+
+  .slide3 {
+    background-image: url(../img/hero-desk3.jpg);
+
+
+  }
+
   .wraper-game {
     background-size: contain;
     background-repeat: repeat;
+  }
+}
+
+@media(min-width: 800px) {
+
+  .screenshot {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .screenshot1 {
+    max-width: 48%;
+  }
+
+  .screenshot2 {
+    min-width: 48%;
   }
 }
