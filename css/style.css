@@ -25,7 +25,7 @@ html {
   justify-content: space-between;
   min-width: 320px;
   padding: 20px 12px;
-  min-height: 713px;
+  min-height: 100vh;
 }
 
 /* SWIPER */
@@ -490,9 +490,7 @@ html {
   grid: 1fr 1fr / 1fr 1fr;
 }
 
-.game-platforms__svg {
-  /* display: inline-block; */
-}
+
 
 /* .game-platforms__svg:not(:nth-child(2n)) {
   margin-right: 56px;
@@ -545,18 +543,21 @@ footer {
 @media(min-width: 500px) {
   .slide1 {
     background-image: url(../img/hero-desk.jpg);
+    background-position: center center;
     height: 100%;
   }
 
   .slide2 {
     background-image: url(../img/hero-desk2.jpg);
     height: 100%;
+    background-position: center center;
 
   }
 
   .slide3 {
     background-image: url(../img/hero-desk3.jpg);
     height: 100%;
+    background-position: center center;
 
   }
 
@@ -584,9 +585,6 @@ footer {
 }
 
 @media(min-width: 1024px) {
-  .header__hero {
-    min-height: 1000px;
-  }
 
   .header {
     display: flex;
